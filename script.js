@@ -1,13 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const greeting = document.getElementById('greeting');
-  const hours = new Date().getHours();
-  const message = hours < 12 ? 'Good morning!' : hours < 18 ? 'Good afternoon!' : 'Good evening!';
-  greeting.textContent = message;
-
   const toggle = document.getElementById('theme-toggle');
+  const images = document.querySelectorAll('[data-day][data-night]');
+
+  function updateTheme() {
+    const night = document.body.classList.contains('night');
+    toggle.textContent = night ? 'Switch to Day' : 'Switch to Night';
+    images.forEach(img => {
+      img.src = night ? img.dataset.night : img.dataset.day;
+    });
+  }
+
   toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    const dark = document.body.classList.contains('dark');
-    toggle.textContent = dark ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+    document.body.classList.toggle('night');
+    updateTheme();
   });
+
+  updateTheme();
+
 });
