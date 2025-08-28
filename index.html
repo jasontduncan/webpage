@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shadow Mountain Lodge | Ruidoso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <h1>Shadow Mountain Lodge</h1>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#cabins">Cabins</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1600607687944-aceb21188a1b?auto=format&fit=crop&w=1350&q=80" alt="Cabins among tall pines">
+      <div class="hero-text">
+        <h2>A quiet retreat in the Upper Canyon</h2>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Welcome</h2>
+        <p>Nestled beneath towering pines, Shadow Mountain Lodge offers peaceful cabins and easy access to the heart of Ruidoso's Upper Canyon.</p>
+      </div>
+    </section>
+
+    <section id="cabins" class="section">
+      <div class="container">
+        <h2>Cabins</h2>
+        <div class="grid">
+          <img src="https://images.unsplash.com/photo-1543525324-65a0d94c5be7?auto=format&fit=crop&w=600&q=80" alt="Rustic cabin exterior">
+          <img src="https://images.unsplash.com/photo-1505693314120-9d1a0e3dfd45?auto=format&fit=crop&w=600&q=80" alt="Cozy cabin interior">
+          <img src="https://images.unsplash.com/photo-1473625247510-8ceb1760943f?auto=format&fit=crop&w=600&q=80" alt="Cabin porch with forest view">
+        </div>
+      </div>
+    </section>
+
+    <section id="amenities" class="section muted">
+      <div class="container">
+        <h2>Amenities</h2>
+        <ul class="amenities">
+          <li>Private decks beneath the pines</li>
+          <li>Wood-burning fireplaces</li>
+          <li>Walking distance to Midtown</li>
+          <li>Pet-friendly cabins available</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="grid">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Night sky over forest">
+          <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=600&q=80" alt="Ruidoso river">
+          <img src="https://images.unsplash.com/photo-1526481280698-8fccb27a0488?auto=format&fit=crop&w=600&q=80" alt="Mountain trail">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section muted">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Call us at <a href="tel:575-123-4567">575-123-4567</a> or email <a href="mailto:info@shadowmountainlodge.com">info@shadowmountainlodge.com</a></p>
+      </div>
+    </section>
+  </main>
+  <button id="chat-toggle" class="chat-toggle" aria-label="Open chat">💬</button>
+  <div id="chat-window" class="chat-window hidden">
+    <div class="chat-header">
+      <span>Virtual Host</span>
+      <button id="chat-close" class="chat-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div id="chat-messages" class="chat-messages" aria-live="polite"></div>
+    <form id="chat-form" class="chat-input">
+      <input type="text" id="chat-input" placeholder="Type a message..." aria-label="Type a message" required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Shadow Mountain Lodge</p>
+  </footer>
+
+  <script src="chat.js"></script>
+</body>
+</html>
