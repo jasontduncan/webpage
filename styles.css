@@ -4,6 +4,7 @@
   --accent-color: #0077b6;
   --accent-hover: #005f86;
   --image-filter: brightness(1);
+
 }
 
 body {
@@ -31,6 +32,7 @@ body.night {
 
 #theme-toggle {
   padding: 0.5rem 1rem;
+
   border: none;
   border-radius: 0.5rem;
   background: var(--accent-color);
@@ -74,4 +76,5 @@ body.night {
   filter: var(--image-filter);
   transition: filter 0.3s;
   border-radius: 0.5rem;
+
 }
