@@ -8,6 +8,7 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+
 }
 
 body {
@@ -28,12 +29,14 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background: var(--color-bg);
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
 }
 
 .nav a {
@@ -49,6 +52,7 @@ h1, h2, h3 {
 
 .hero {
   position: relative;
+
 }
 
 .hero img {
@@ -200,4 +204,5 @@ h1, h2, h3 {
   .chat-window {
     height: 400px;
   }
+
 }
